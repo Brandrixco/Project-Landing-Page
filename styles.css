@@ -38,7 +38,8 @@ body{margin:0;font-family:Inter,system-ui, -apple-system, "Segoe UI", Roboto, Ar
 .section-title{text-align:center;margin:2rem 0 1rem}
 .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
 .feature{display:flex;flex-direction:column;align-items:center}
-.feature-illustration{width:96px;height:96px;border-radius:12px;border:3px solid var(--accent);background:#fff}
+.feature-illustration{inline-size:clamp(64px,8vw,96px);aspect-ratio:1/1;border-radius:12px;border:3px solid var(--accent);background:#fff;overflow:hidden;display:inline-grid;place-items:center}
+.feature-image{width:100%;height:100%;object-fit:cover;display:block;border-radius:8px}
 .feature-caption{color:#6b7280;text-align:center;font-size:.95rem}
 
 /* Testimonial */
